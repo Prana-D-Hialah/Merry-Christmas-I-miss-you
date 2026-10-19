@@ -3,7 +3,6 @@ import time
 import threading
 import random
 
-# Lyrics
 lyrics = [
     ("You know it's true", 0.07, 2.3),
     ("Yeah i miss you", 0.08, 3.2),
@@ -112,10 +111,8 @@ def typewriter_effect():
             root.update()
     threading.Thread(target=run, daemon=True).start()
 
-# Call
 create_particles(150)
 
-# Call
 animate_particles()
 twinkle_particles()
 glow_effect()
